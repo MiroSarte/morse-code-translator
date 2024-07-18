@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root{
+    --background-color-light: #f2f2f2;
+    --background-color-dark: #252525;
+    --secondary-background: #d5d5d5;
+    --font-style: "Roboto", sans-serif;
+    --font-size-s: 1em;
+    --font-size-m: 1.5em;
+    --font-size-l:2em;
+    --accent-color:#ff4421;
+    --font-color-light: #f1f1f1;
+    --font-color-dark: #121212;
+  }
+
+
+.translator_mode{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin: auto;
+    width: 70vw;
+}
+.translator_mode > h3, span{
+    font-family: var(--font-style);
+    font-size: var(--font-size-s);
+}
+.translator_mode >span{
+    cursor: pointer;
+}
+.translator_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+    margin: auto;
+    width: 70vw;
+    height: 20em;
+}
+.translator_container1{
+    height: 18em;
+    width: 35vw;
+    background-color: var(--secondary-background);
+    border-radius: .2em;
+}
+.translator_container1 > textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-style: none;
+    resize: none;
+    background-color: var(--secondary-background);
+    padding: .5em;
+    font-size: var(--font-size-m);
+    font-family: var(--font-style);
+}
+
+.translator_container2{
+    height: 18em;
+    width: 35vw;
+    background-color: var(--secondary-background);
+    border-radius: .2em;
+    padding: .5em;
+    color: var(--font-color-dark);
+}
+.translator_container2 > p{
+    font-family: var(--font-style);
+    font-size: var(--font-size-m);
+}
+.btn_wrap{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+
+}
+.btn_wrap > button{
+    height: 3em;
+    width: 8em;
+    font-size: var(--font-size-s);
+    font-family: var(--font-style);
+    border: none ;
+    background-color: var(--secondary-background);
+    font-weight: 700;
+    border-radius: .2em;
+    cursor: pointer;
+}
+button:active{
+    background-color: var(--accent-color);
+  
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 600px) {
+    .translator_container
+        {
+         flex-direction: column;
+         margin-top: 1em;
+         margin-bottom: 1em;
+
+        }
+
+        .translator_container1{
+            height: 18em;
+            width: 80vw;
+           
+        }
+       
+        .translator_container2{
+            height: 18em;
+            width: 80vw;
+            background-color: var(--secondary-background);
+            border-radius: .2em;
+            padding: .5em;
+        }
+      
+  }
+
+
+
+
+
+
+

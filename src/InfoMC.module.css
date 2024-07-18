@@ -1,0 +1,47 @@
+:root{
+    --background-color: #f2f2f2;
+    --secondary-background: #d5d5d5;
+    --font-style: "Roboto", sans-serif;
+    --font-size-s: 1em;
+    --font-size-m: 2em;
+    --font-size-l:3em;
+    --accent-color:#ff4421;
+  }
+
+.info_container{
+    
+    width: 70vw;
+    margin: auto;
+    font-family: var(--font-style);
+    line-height: 2.5em;
+}
+
+
+
+.info_container > ul > li > span{
+  font-weight: 700;
+}
+.mc_table{
+  width: 70vw;
+  margin: auto;
+  font-family: var(--font-style);
+}
+
+table{
+  margin-top: 2em;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table > td, th{
+  width: 50%;
+
+}
+
+
+
+table, td, th{
+ 
+  border: 1px, solid;
+  text-align: center;
+}
